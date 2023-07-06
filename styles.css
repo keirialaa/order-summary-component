@@ -1,0 +1,148 @@
+body {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="437"><path fill="%23D6E1FF" fill-rule="evenodd" d="M0 349.974c218.558 116.035 460.05 116.035 724.475 0s502.933-116.035 715.525 0V0H0v349.974z"/></svg>');
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Red Hat Display", sans-serif;
+  color: hsl(223, 47%, 23%);
+}
+h2 {
+  margin: 0;
+}
+button {
+  padding: 13px 0;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 10px 10px 12px hsl(225, 100%, 94%);
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: hsla(245, 75%, 52%, 70%);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 25px;
+  width: 280px;
+  line-height: 22px;
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+  font-size: 14px;
+}
+.attribution {
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(225, 100%, 94%, 40%);
+}
+#cancel {
+  color: hsl(224, 23%, 55%);
+  font-size: 14px;
+  cursor: pointer;
+}
+#cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+#change {
+  text-decoration: underline;
+  font-size: 14px;
+  color: hsl(245, 75%, 52%);
+  cursor: pointer;
+}
+#change:hover {
+  text-decoration: none;
+}
+.component {
+  z-index: 1;
+  width: 420px;
+  border-radius: 22px;
+  background-color: white;
+  box-shadow: 10px 10px 15px hsl(225, 100%, 94%);
+}
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 45px;
+}
+.plan {
+  width: 100%;
+  background-color: hsla(225, 100%, 94%, 40%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  padding: 10px;
+}
+.price {
+  display: flex;
+  flex-direction: column;
+}
+.price > h2 {
+  font-size: 16px;
+}
+.price > h3 {
+  font-size: 12px;
+  margin: 0;
+  color: hsl(224, 23%, 55%);
+}
+.image img {
+  width: 100%;
+  border-radius: 22px 22px 0px 0px;
+}
+.music {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.music > img {
+  height: 45px;
+}
+@media (max-width: 480px) {
+  .component {
+    width: 85%;
+  }
+  h1 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+    width: 100%;
+  }
+  .plan {
+    font-size: 12px;
+  }
+  #change {
+    font-size: 12px;
+  }
+  #cancel {
+    font-size: 12px;
+  }
+  button {
+    font-size: 12px;
+  }
+  .music {
+    gap: 10px;
+  }
+  .music > img {
+    height: 30px;
+  }
+}
